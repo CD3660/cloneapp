@@ -35,7 +35,7 @@ public class AccountAdapter extends RecyclerView.Adapter<AccountAdapter.AccountV
 
     @Override
     public int getItemCount() {
-        return 2;
+        return 3;
     }
 
     public class AccountViewHolder extends RecyclerView.ViewHolder {
