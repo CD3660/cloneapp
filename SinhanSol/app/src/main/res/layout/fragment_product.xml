@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductFragment"
+    android:background="@color/bg">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:backgroundTint="#FFFFFF"
+            android:background="@drawable/round_corner"
+            android:layout_width="370dp"
+            android:layout_height="170dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:text="나의 상품 바구니"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    />
+
+                <ImageView
+                    android:layout_width="39dp"
+                    android:layout_height="39dp"
+                    android:src="@drawable/ic_launcher_foreground"
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:src="@drawable/ic_launcher_foreground"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"/>
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="80dp"
+                        android:layout_height="20dp"                        android:text="영업점추천0"/>
+                </LinearLayout>
+
+                <View
+                    style="@style/gray_view_line1dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:src="@drawable/ic_launcher_foreground"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"/>
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="80dp"
+                        android:layout_height="20dp"
+                        android:text="가입중0"/>
+                </LinearLayout>
+
+                <View
+                    style="@style/gray_view_line1dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:src="@drawable/ic_launcher_foreground"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"/>
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="80dp"
+                        android:layout_height="20dp"
+                        android:text="관심상품0"/>
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:backgroundTint="#FFFFFF"
+            android:background="@drawable/round_corner"
+            android:layout_width="370dp"
+            android:layout_height="260dp"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:backgroundTint="#FFFFFF"
+            android:background="@drawable/round_corner"
+            android:layout_width="370dp"
+            android:layout_height="130dp"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:backgroundTint="#FFFFFF"
+            android:background="@drawable/round_corner"
+            android:layout_width="370dp"
+            android:layout_height="1200dp"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:backgroundTint="#FFFFFF"
+            android:background="@drawable/round_corner"
+            android:layout_width="370dp"
+            android:layout_height="150dp"
+            android:orientation="vertical"
+
+            >
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="70dp"/>
+
+
+
+        </LinearLayout>
+
+
+
+</ScrollView>
+
+</FrameLayout>
