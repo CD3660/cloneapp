@@ -4,6 +4,16 @@ public class MoneyverseDTO {
     private String tv_title, tv_subtitle, tv_context, tv_btn;
     private int imgv_src;
 
+    public int getBackground() {
+        return background;
+    }
+
+    public void setBackground(int background) {
+        this.background = background;
+    }
+
+    private int background;
+
     public String getTv_title() {
         return tv_title;
     }
@@ -44,11 +54,12 @@ public class MoneyverseDTO {
         this.imgv_src = imgv_src;
     }
 
-    public MoneyverseDTO(String tv_title, String tv_subtitle, String tv_context, String tv_btn, int imgv_src) {
+    public MoneyverseDTO(String tv_title, String tv_subtitle, String tv_context, String tv_btn, int imgv_src, int background) {
         this.tv_title = tv_title;
         this.tv_subtitle = tv_subtitle;
         this.tv_context = tv_context;
         this.tv_btn = tv_btn;
         this.imgv_src = imgv_src;
+        this.background = background;
     }
 }

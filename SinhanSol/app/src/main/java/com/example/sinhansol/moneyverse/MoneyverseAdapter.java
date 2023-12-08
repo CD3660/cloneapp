@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.sinhansol.R;
 import com.example.sinhansol.databinding.ItemRecvMeneyverseBinding;
 
 import java.util.ArrayList;
@@ -33,12 +34,39 @@ public class MoneyverseAdapter extends RecyclerView.Adapter<MoneyverseAdapter.Mo
     @Override
     public void onBindViewHolder(@NonNull MoneyverseViewHolder h, int i) {
         h.binding.tvTitle.setText(list.get(i).getTv_title());
-        
+        if(list.get(i).getTv_subtitle() == null){
+            h.binding.tvSubtitle.setVisibility(View.GONE);
+        } else {
+            h.binding.tvSubtitle.setText(list.get(i).getTv_subtitle());
+        }
+        if(list.get(i).getTv_context() == null){
+            h.binding.tvContext.setVisibility(View.GONE);
+        } else {
+            h.binding.tvContext.setText(list.get(i).getTv_context());
+        }
+        if(list.get(i).getTv_btn() == null){
+            h.binding.tvBtn.setVisibility(View.GONE);
+        } else {
+            h.binding.tvBtn.setText(list.get(i).getTv_btn());
+        }
+        if(list.get(i).getImgv_src() == 0){
+            h.binding.imgv.setVisibility(View.GONE);
+        } else {
+            h.binding.imgv.setImageResource(list.get(i).getImgv_src());
+        }
+        if(list.get(i).getBackground() != 0){
+            h.binding.getRoot().setBackgroundColor(list.get(i).getBackground());
+            h.binding.tvTitle.setTextColor(h.binding.getRoot().getResources().getColor(R.color.white));
+            h.binding.tvSubtitle.setTextColor(h.binding.getRoot().getResources().getColor(R.color.white));
+            h.binding.tvContext.setTextColor(h.binding.getRoot().getResources().getColor(R.color.white));
+            h.binding.tvBtn.setTextColor(h.binding.getRoot().getResources().getColor(R.color.white));
+        }
+
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return list.size();
     }
 
     public class MoneyverseViewHolder extends RecyclerView.ViewHolder {
