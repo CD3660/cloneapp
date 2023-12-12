@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="5dp">
+        android:padding="10dp">
         <ImageView
             android:src="@drawable/go_back_arrow"
             android:layout_width="30dp"
@@ -45,6 +45,7 @@
 
     </LinearLayout>
     <com.google.android.material.tabs.TabLayout
+        android:id="@+id/account_check_tab"
         app:tabTextAppearance="@style/tab_text"
         app:tabIndicatorColor="@color/black"
         app:tabTextColor="#959595"
@@ -69,4 +70,5 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"/>
+
 </LinearLayout>
