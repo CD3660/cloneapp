@@ -9,18 +9,32 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.sinhansol.R;
+import com.example.sinhansol.databinding.FragmentAllMenuBinding;
 
 
 public class AllMenuFragment extends Fragment {
 
-
+    FragmentAllMenuBinding binding;
 
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_all_menu, container, false);
+
+        binding = FragmentAllMenuBinding.inflate(inflater, container, false);
+
+        binding.menu_recv.setAdapter
+
+
+
+
+
+
+
+
+
+
+        return binding.getRoot();
     }
 }

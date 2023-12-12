@@ -19,13 +19,13 @@
             android:name=".SplashActivity"
             android:exported="false" />
         <activity
-            android:name=".transactionhistory.TransactionHistoryActivity"
+            android:name=".moneyinout.AccountCheckActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".moneyinout.AccountCheckActivity"
+            android:name=".transactionhistory.TransactionHistoryActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -33,7 +33,12 @@ public class AllMenuAdapter1 extends RecyclerView.Adapter<AllMenuAdapter1.ViewHo
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ViewHolder h, int i) {
+        h.binding.menu_recv1_title.setText(list.get(i).get
+
+
+
+
 
     }
 
