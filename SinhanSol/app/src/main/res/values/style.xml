@@ -21,7 +21,15 @@
         <item name="iconSize">40dp</item>
 
     </style>
+    <style name="tab_btn_text" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">17dp</item>
 
+    </style>
+    <style name="tab_btn_text_selected" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">17dp</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
 
     <style name="gray_view_line1dp_horizontal">
         <item name="android:background">#BFBFBF</item>

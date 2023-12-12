@@ -61,7 +61,6 @@ public class MoneyverseAdapter extends RecyclerView.Adapter<MoneyverseAdapter.Mo
             h.binding.tvContext.setTextColor(h.binding.getRoot().getResources().getColor(R.color.white));
             h.binding.tvBtn.setTextColor(h.binding.getRoot().getResources().getColor(R.color.white));
         }
-
     }
 
     @Override
