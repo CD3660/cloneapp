@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.sinhansol.databinding.ItemMenuRecv1Binding;
@@ -32,9 +33,18 @@ public class AllMenuAdapter1 extends RecyclerView.Adapter<AllMenuAdapter1.ViewHo
         return new ViewHolder(binding);
     }
 
+
     @Override
     public void onBindViewHolder(@NonNull ViewHolder h, int i) {
-        h.binding.menu_recv1_title.setText(list.get(i).get
+        h.binding.menuRecv1Title.setText("변경할 내용");
+
+
+
+        AllMenuAdapter2 apt2 = new AllMenuAdapter2();
+        h.binding.menuRecv1List.setAdapter(apt2);
+        h.binding.menuRecv1List.setLayoutManager(new LinearLayoutManager(context));
+
+
 
 
 

@@ -1,6 +1,8 @@
 package com.example.sinhansol.allmenu;
 
-public class AllMenuAdapter2 {
+import androidx.recyclerview.widget.RecyclerView;
+
+public class AllMenuAdapter2 extends RecyclerView.Adapter<> {
 
 
 
