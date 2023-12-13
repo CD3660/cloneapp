@@ -23,8 +23,11 @@ public class AllMenuAdapter1 extends RecyclerView.Adapter<AllMenuAdapter1.ViewHo
 
     Context context;
 
-
-
+    public AllMenuAdapter1(LayoutInflater inflater, ArrayList<String> list, Context context) {
+        this.inflater = inflater;
+        this.list = list;
+        this.context = context;
+    }
 
     @NonNull
     @Override
@@ -36,7 +39,7 @@ public class AllMenuAdapter1 extends RecyclerView.Adapter<AllMenuAdapter1.ViewHo
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder h, int i) {
-        h.binding.menuRecv1Title.setText("변경할 내용");
+        h.binding.menuRecv1Title.setText(list.get(i));
 
 
 
