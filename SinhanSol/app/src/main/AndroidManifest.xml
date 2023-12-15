@@ -16,7 +16,7 @@
             android:name=".moneyinout.AccountCheckActivity"
             android:exported="false" />
         <activity
-            android:name=".SplashActivity"
+            android:name=".transfer.TransferToActivity"
             android:exported="false" />
         <activity
             android:name=".transactionhistory.TransactionHistoryActivity"
@@ -25,7 +25,7 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".transfer.TransferToActivity"
+            android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
