@@ -48,17 +48,16 @@ public class AllMenuAdapter1 extends RecyclerView.Adapter<AllMenuAdapter1.ViewHo
         h.binding.menuRecv1List.setLayoutManager(new LinearLayoutManager(context));
 
 
-
-
-
-
-
     }
 
     @Override
     public int getItemCount() {
         return list.size();
     }
+
+
+
+
 
     public class ViewHolder extends RecyclerView.ViewHolder {
 
