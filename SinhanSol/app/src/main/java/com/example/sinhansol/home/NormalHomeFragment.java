@@ -1,5 +1,6 @@
-package com.example.sinhansol;
+package com.example.sinhansol.home;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -10,7 +11,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.sinhansol.AccountAdapter;
 import com.example.sinhansol.databinding.FragmentNormalHomeBinding;
+import com.example.sinhansol.moneyinout.AccountCheckActivity;
 
 
 public class NormalHomeFragment extends Fragment {
@@ -33,6 +36,11 @@ public class NormalHomeFragment extends Fragment {
                 super.onPageSelected(i);
 
             }
+        });
+        binding.accountCheck.setOnClickListener(v -> {
+            Intent intent = new Intent(getContext(), AccountCheckActivity.class);
+
+            startActivity(intent);
         });
 
 

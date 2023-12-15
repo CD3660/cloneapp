@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="#F2F5FA"
 
-    tools:context=".NormalHomeFragment">
+    tools:context=".home.NormalHomeFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -29,6 +29,7 @@
         </RelativeLayout>
         <!--  내 계좌 타이틀! -->
         <RelativeLayout
+            android:id="@+id/account_check"
             style="@style/box"
             android:layout_width="match_parent"
             android:layout_height="50dp"

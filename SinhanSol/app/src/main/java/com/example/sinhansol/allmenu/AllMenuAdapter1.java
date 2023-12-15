@@ -44,7 +44,7 @@ public class AllMenuAdapter1 extends RecyclerView.Adapter<AllMenuAdapter1.ViewHo
 
 
         AllMenuAdapter2 apt2 = new AllMenuAdapter2();
-        h.binding.menuRecv1List.setAdapter(apt2);
+//        h.binding.menuRecv1List.setAdapter(apt2);
         h.binding.menuRecv1List.setLayoutManager(new LinearLayoutManager(context));
 
 

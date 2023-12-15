@@ -1,6 +1,7 @@
 package com.example.sinhansol;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,6 +10,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.sinhansol.databinding.ItemRecvAccountBinding;
+import com.example.sinhansol.transactionhistory.TransactionHistoryActivity;
+import com.example.sinhansol.transfer.TransferToActivity;
 
 import java.util.ArrayList;
 
@@ -29,8 +32,17 @@ public class AccountAdapter extends RecyclerView.Adapter<AccountAdapter.AccountV
     }
 
     @Override
-    public void onBindViewHolder(@NonNull AccountViewHolder holder, int position) {
-
+    public void onBindViewHolder(@NonNull AccountViewHolder h, int i) {
+        h.binding.history.setOnClickListener(v -> {
+            Intent intent = new Intent(context, TransactionHistoryActivity.class);
+            intent.putExtra("account_num", h.binding.accountNum.getText().toString());
+            context.startActivity(intent);
+        });
+        h.binding.transfer.setOnClickListener(v -> {
+            Intent intent = new Intent(context, TransferToActivity.class);
+            
+            context.startActivity(intent);
+        });
     }
 
     @Override

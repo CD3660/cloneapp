@@ -7,7 +7,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 
+import com.example.sinhansol.allmenu.AllMenuFragment;
 import com.example.sinhansol.databinding.ActivityMainBinding;
+import com.example.sinhansol.home.HomeFragment;
 import com.example.sinhansol.moneyverse.MoneyverseFragment;
 import com.example.sinhansol.moneyverse.SpendFragment;
 
@@ -18,10 +20,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        changeFragment(new SpendFragment());
+        changeFragment(new HomeFragment());
         binding.btmNav.setOnItemSelectedListener(item -> {
             if(item.getItemId() == binding.btmNav.getMenu().getItem(0).getItemId()){
-                changeFragment(new SpendFragment());
+                changeFragment(new HomeFragment());
             } else if(item.getItemId() == binding.btmNav.getMenu().getItem(1).getItemId()){
                 changeFragment(new MoneyverseFragment());
             } else if(item.getItemId() == binding.btmNav.getMenu().getItem(2).getItemId()){

@@ -1,4 +1,4 @@
-package com.example.sinhansol;
+package com.example.sinhansol.home;
 
 import android.os.Bundle;
 
