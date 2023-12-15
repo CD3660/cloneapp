@@ -1,6 +1,7 @@
 package com.example.sinhansol.allmenu;
 
 import android.content.Context;
+import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
@@ -15,25 +16,23 @@ import java.util.ArrayList;
 public class AllMenuAdapter2 extends RecyclerView.Adapter<AllMenuAdapter2.ViewHolder> {
 
 
+    LayoutInflater inflater;
 
     ArrayList<String> list;
 
     Context context;
 
 
-
-    public AllMenuAdapter2(ArrayList<String> list, Context context) {
+    public AllMenuAdapter2(LayoutInflater inflater, ArrayList<String> list, Context context) {
+        this.inflater = inflater;
         this.list = list;
         this.context = context;
     }
 
-
-
-
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        ItemMenuRecv2Binding binding = ItemMenuRecv2Binding.inflate(LayoutInflater.from(context), parent, false);
+        ItemMenuRecv2Binding binding = ItemMenuRecv2Binding.inflate(inflater, parent, false);
         return new ViewHolder(binding);
     }
 
@@ -41,7 +40,6 @@ public class AllMenuAdapter2 extends RecyclerView.Adapter<AllMenuAdapter2.ViewHo
     public void onBindViewHolder(@NonNull ViewHolder h, int i) {
 
         h.binding.menuRecv2DetailList.setText(list.get(i));
-
 
 
 

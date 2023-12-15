@@ -24,13 +24,13 @@ public class AllMenuFragment extends Fragment {
 
         binding = FragmentAllMenuBinding.inflate(inflater, container, false);
 
-        binding.menuRecv.setAdapter(new AllMenuAdapter1(inflater, getData(), getContext()));
+        binding.menuRecv.setAdapter(new AllMenuAdapter1(inflater, getData1(), getContext()));
         binding.menuRecv.setLayoutManager(new LinearLayoutManager(getContext()));
 
         return binding.getRoot();
     }
 
-    public ArrayList<String> getData() {
+    public ArrayList<String> getData1() {
         ArrayList<String> list = new ArrayList<>();
         list.add("자주쓰는 메뉴");
         list.add("조회/관리");
