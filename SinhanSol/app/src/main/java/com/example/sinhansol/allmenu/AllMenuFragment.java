@@ -24,7 +24,7 @@ public class AllMenuFragment extends Fragment {
 
         binding = FragmentAllMenuBinding.inflate(inflater, container, false);
 
-        binding.menuRecv.setAdapter(new AllMenuAdapter1(inflater, getList(),getData1(), getContext()));
+        binding.menuRecv.setAdapter(new AllMenuAdapter1(inflater, getList(), getData1(), getContext()));
         binding.menuRecv.setLayoutManager(new LinearLayoutManager(getContext()));
 
         return binding.getRoot();

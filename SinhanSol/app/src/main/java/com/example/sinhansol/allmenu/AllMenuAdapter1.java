@@ -41,7 +41,7 @@ public class AllMenuAdapter1 extends RecyclerView.Adapter<AllMenuAdapter1.ViewHo
     @Override
     public void onBindViewHolder(@NonNull ViewHolder h, int i) {
         h.binding.menuRecv1Title.setText(titleList.get(i));
-        
+
         h.binding.menuRecv1List.setAdapter(new AllMenuAdapter2(inflater, list.get(i), context));
         h.binding.menuRecv1List.setLayoutManager(new LinearLayoutManager(context));
         if(i == (list.size()-1)){
