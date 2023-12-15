@@ -19,7 +19,7 @@
             android:name=".transfer.TransferToActivity"
             android:exported="false" />
         <activity
-            android:name=".transactionhistory.TransactionHistoryActivity"
+            android:name=".moneyinout.AccountCheckActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
