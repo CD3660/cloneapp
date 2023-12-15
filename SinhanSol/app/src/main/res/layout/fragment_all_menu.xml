@@ -114,7 +114,7 @@
                 android:layout_weight="1"
                 android:background="#00000000"
                 android:padding="8dp"
-                android:text="상품,메뉴,혜택 등을 검색해보세요"
+                android:hint="상품,메뉴,혜택 등을 검색해보세요"
                 android:textColor="#C5C9CC" />
 
             <ImageView
@@ -318,7 +318,7 @@
     </HorizontalScrollView>
 
 
-    <ScrollView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -457,7 +457,7 @@
         </LinearLayout>
 
 
-    </ScrollView>
+    </androidx.core.widget.NestedScrollView>
 
 
 </LinearLayout>
