@@ -91,7 +91,7 @@
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
                     android:layout_marginRight="10dp"
-                    android:src="@drawable/ic_launcher_foreground" />
+                    android:src="@drawable/one_eye_1" />
 
             </RelativeLayout>
 
@@ -137,7 +137,7 @@
                         android:layout_marginBottom="20dp"
                         android:text="카드, 증권, 포인트, 자동차, 부동산,\n휴대폰까지 내 자산으로 관리"
                         android:textColor="#6A6A6A"
-                        android:textSize="18dp" />
+                        android:textSize="17dp" />
 
                     <ImageView
                         android:layout_width="100dp"
@@ -145,7 +145,7 @@
                         android:layout_alignParentRight="true"
                         android:layout_centerVertical="true"
                         android:layout_marginRight="10dp"
-                        android:src="@drawable/ic_launcher_foreground" />
+                        android:src="@drawable/one_eye_2" />
 
                 </RelativeLayout>
 
@@ -197,7 +197,7 @@
                         android:layout_alignParentRight="true"
                         android:layout_centerVertical="true"
                         android:layout_marginRight="10dp"
-                        android:src="@drawable/ic_launcher_foreground" />
+                        android:src="@drawable/one_eye_3" />
 
                 </RelativeLayout>
             </LinearLayout>
@@ -233,7 +233,7 @@
                         <ImageView
                             android:layout_width="70dp"
                             android:layout_height="70dp"
-                            android:src="@drawable/ic_launcher_foreground" />
+                            android:src="@drawable/one_eye_com_1" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -251,7 +251,7 @@
                         <ImageView
                             android:layout_width="70dp"
                             android:layout_height="70dp"
-                            android:src="@drawable/ic_launcher_foreground" />
+                            android:src="@drawable/one_eye_com_2" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -269,7 +269,7 @@
                         <ImageView
                             android:layout_width="70dp"
                             android:layout_height="70dp"
-                            android:src="@drawable/ic_launcher_foreground" />
+                            android:src="@drawable/one_eye_com_3" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -298,7 +298,7 @@
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/ic_launcher_foreground" />
+                        android:src="@drawable/one_eye_etc_1" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -316,7 +316,7 @@
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/ic_launcher_foreground" />
+                        android:src="@drawable/one_eye_etc_2" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -334,7 +334,7 @@
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/ic_launcher_foreground" />
+                        android:src="@drawable/one_eye_etc_3" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -352,7 +352,7 @@
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/ic_launcher_foreground" />
+                        android:src="@drawable/one_eye_etc_4" />
 
                     <TextView
                         android:layout_width="wrap_content"

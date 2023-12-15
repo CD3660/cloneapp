@@ -55,7 +55,7 @@ public class MoneyverseAdapter extends RecyclerView.Adapter<MoneyverseAdapter.Mo
             h.binding.imgv.setImageResource(list.get(i).getImgv_src());
         }
         if(list.get(i).getBackground() != 0){
-            h.binding.getRoot().setBackgroundColor(list.get(i).getBackground());
+//            h.binding.box.setBackground();
             h.binding.tvTitle.setTextColor(h.binding.getRoot().getResources().getColor(R.color.white));
             h.binding.tvSubtitle.setTextColor(h.binding.getRoot().getResources().getColor(R.color.white));
             h.binding.tvContext.setTextColor(h.binding.getRoot().getResources().getColor(R.color.white));

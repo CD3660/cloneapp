@@ -61,7 +61,7 @@
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
                     android:layout_marginRight="10dp"
-                    android:src="@drawable/ic_launcher_foreground" />
+                    android:src="@drawable/money_1" />
 
             </RelativeLayout>
             <TextView
@@ -113,7 +113,7 @@
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
                     android:layout_marginRight="10dp"
-                    android:src="@drawable/ic_launcher_foreground" />
+                    android:src="@drawable/money_2" />
 
             </RelativeLayout>
             <TextView
@@ -176,7 +176,7 @@
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
                     android:layout_marginRight="10dp"
-                    android:src="@drawable/ic_launcher_foreground" />
+                    android:src="@drawable/money_3" />
 
             </RelativeLayout>
             <TextView
@@ -227,7 +227,7 @@
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
                     android:layout_marginRight="10dp"
-                    android:src="@drawable/ic_launcher_foreground" />
+                    android:src="@drawable/money_4" />
 
             </RelativeLayout>
         </LinearLayout>
