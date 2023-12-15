@@ -16,7 +16,7 @@
         <ImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@drawable/ic_launcher_foreground" />
+            android:src="@drawable/sinhan_logo" />
 
         <LinearLayout
             android:layout_width="0dp"
@@ -118,11 +118,11 @@
 
     <HorizontalScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="horizontal"
             android:padding="10dp">
 
@@ -135,9 +135,9 @@
 
                 <ImageView
                     android:id="@+id/send1"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:src="@drawable/ic_launcher_foreground" />
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/uri_logo" />
 
                 <TextView
                     android:id="@+id/send1_name"
@@ -170,9 +170,13 @@
 
                 <ImageView
                     android:id="@+id/send2"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:src="@drawable/ic_launcher_foreground" />
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:src="@drawable/ibk_logo" />
 
                 <TextView
                     android:id="@+id/send2_name"
