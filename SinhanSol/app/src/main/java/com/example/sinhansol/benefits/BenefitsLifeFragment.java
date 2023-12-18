@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.viewpager2.widget.ViewPager2;
 
+import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,7 +20,7 @@ import java.util.TimerTask;
 
 
 public class BenefitsLifeFragment extends Fragment {
-
+    private Handler slideHandler = new Handler();
     FragmentBenefitsLifeBinding binding;
 
     @Override
@@ -37,6 +38,7 @@ public class BenefitsLifeFragment extends Fragment {
                 binding.pager2PageNow.setText((i%5+1)+"");
             }
         });
+        binding.pager2.setScroll
         binding.pager2.setCurrentItem(1000);
 
         binding.recv.setAdapter(new LifeRecvAdapter(getContext(), getList()));
@@ -44,6 +46,11 @@ public class BenefitsLifeFragment extends Fragment {
 
         return binding.getRoot();
     }
+
+    public void startAutoScrolling(){
+
+    }
+
     ArrayList<ArrayList<String>> getList(){
         ArrayList<ArrayList<String>> list = new ArrayList<>();
         list.add(new ArrayList<String>());
