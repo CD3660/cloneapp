@@ -25,14 +25,15 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         getChildFragmentManager().beginTransaction().replace(binding.container.getId(),new NormalHomeFragment()).commit();
-        
-
-
-
-
-
 
 
         return binding.getRoot();
+    }
+    public void changeFragment(boolean isChecked){
+        if(isChecked) {
+            getChildFragmentManager().beginTransaction().replace(binding.container.getId(), new NormalHomeFragment()).commit();
+        } else {
+            getChildFragmentManager().beginTransaction().replace(binding.container.getId(),new EasyHomeFragment()).commit();
+        }
     }
 }
