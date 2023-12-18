@@ -64,17 +64,4 @@ public class AllMenuAdapter1 extends RecyclerView.Adapter<AllMenuAdapter1.ViewHo
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
