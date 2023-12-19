@@ -6,6 +6,7 @@ import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,11 +14,12 @@ import android.view.ViewGroup;
 import com.example.sinhansol.R;
 import com.example.sinhansol.ReadyActivity;
 import com.example.sinhansol.databinding.FragmentAllMenuBinding;
+import com.google.android.material.chip.Chip;
 
 import java.util.ArrayList;
 
 
-public class AllMenuFragment extends Fragment implements View.OnClickListener{
+public class AllMenuFragment extends Fragment implements View.OnClickListener {
     FragmentAllMenuBinding binding;
 
     @Override
@@ -26,15 +28,17 @@ public class AllMenuFragment extends Fragment implements View.OnClickListener{
 
         binding = FragmentAllMenuBinding.inflate(inflater, container, false);
 
-        binding.menuRecv.setAdapter(new AllMenuAdapter1(inflater, getList(),getData1(), getContext()));
+        binding.menuRecv.setAdapter(new AllMenuAdapter1(inflater, getList(), getData1(), getContext(), this));
         binding.menuRecv.setLayoutManager(new LinearLayoutManager(getContext()));
 
         binding.ready1.setOnClickListener(this);
         binding.ready2.setOnClickListener(this);
         binding.ready3.setOnClickListener(this);
 
+
         return binding.getRoot();
     }
+
 
     public ArrayList<String> getData1() {
         ArrayList<String> list = new ArrayList<>();
@@ -61,7 +65,7 @@ public class AllMenuFragment extends Fragment implements View.OnClickListener{
 
     }
 
-    public ArrayList<ArrayList<String>> getList(){
+    public ArrayList<ArrayList<String>> getList() {
         ArrayList<ArrayList<String>> list = new ArrayList<>();
         list.add(getListData1());
         list.add(getListData2());
@@ -124,8 +128,6 @@ public class AllMenuFragment extends Fragment implements View.OnClickListener{
     }
 
 
-
-
     public ArrayList<String> getListData4() {
         ArrayList<String> subList = new ArrayList<>();
         subList.add("납부하기");
@@ -139,8 +141,6 @@ public class AllMenuFragment extends Fragment implements View.OnClickListener{
     }
 
 
-
-
     public ArrayList<String> getListData5() {
         ArrayList<String> subList = new ArrayList<>();
         subList.add("상품");
@@ -148,7 +148,6 @@ public class AllMenuFragment extends Fragment implements View.OnClickListener{
 
         return subList;
     }
-
 
 
     public ArrayList<String> getListData6() {
@@ -170,8 +169,6 @@ public class AllMenuFragment extends Fragment implements View.OnClickListener{
     }
 
 
-
-
     public ArrayList<String> getListData7() {
         ArrayList<String> subList = new ArrayList<>();
         subList.add("환율");
@@ -184,9 +181,8 @@ public class AllMenuFragment extends Fragment implements View.OnClickListener{
         subList.add("원격거래 서비스(해외고객전용)");
         subList.add("외국환거래약정 동의");
 
-        return subList ;
+        return subList;
     }
-
 
 
     public ArrayList<String> getListData8() {
@@ -203,8 +199,6 @@ public class AllMenuFragment extends Fragment implements View.OnClickListener{
 
         return subList;
     }
-
-
 
 
     public ArrayList<String> getListData9() {
@@ -227,8 +221,6 @@ public class AllMenuFragment extends Fragment implements View.OnClickListener{
     }
 
 
-
-
     public ArrayList<String> getListData10() {
         ArrayList<String> subList = new ArrayList<>();
         subList.add("화상상담서비스");
@@ -239,8 +231,6 @@ public class AllMenuFragment extends Fragment implements View.OnClickListener{
 
         return subList;
     }
-
-
 
 
     public ArrayList<String> getListData11() {
@@ -256,7 +246,6 @@ public class AllMenuFragment extends Fragment implements View.OnClickListener{
     }
 
 
-
     public ArrayList<String> getListData12() {
         ArrayList<String> subList = new ArrayList<>();
         subList.add("참여마당");
@@ -265,7 +254,6 @@ public class AllMenuFragment extends Fragment implements View.OnClickListener{
 
         return subList;
     }
-
 
 
     public ArrayList<String> getListData13() {
@@ -281,7 +269,6 @@ public class AllMenuFragment extends Fragment implements View.OnClickListener{
     }
 
 
-
     public ArrayList<String> getListData14() {
         ArrayList<String> subList = new ArrayList<>();
         subList.add("금융상품비교");
@@ -294,8 +281,6 @@ public class AllMenuFragment extends Fragment implements View.OnClickListener{
 
         return subList;
     }
-
-
 
 
     public ArrayList<String> getListData15() {
@@ -324,7 +309,6 @@ public class AllMenuFragment extends Fragment implements View.OnClickListener{
     }
 
 
-
     public ArrayList<String> getListData17() {
         ArrayList<String> subList = new ArrayList<>();
         subList.add("새소식");
@@ -339,7 +323,6 @@ public class AllMenuFragment extends Fragment implements View.OnClickListener{
 
         return subList;
     }
-
 
 
     public ArrayList<String> getListData18() {
