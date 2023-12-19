@@ -38,7 +38,7 @@ public class BenefitsLifeFragment extends Fragment {
                 binding.pager2PageNow.setText((i%5+1)+"");
             }
         });
-        binding.pager2.setScroll
+        /*binding.pager2.setScroll*/
         binding.pager2.setCurrentItem(1000);
 
         binding.recv.setAdapter(new LifeRecvAdapter(getContext(), getList()));
