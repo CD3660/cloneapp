@@ -12,11 +12,12 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.sinhansol.AccountAdapter;
+import com.example.sinhansol.ReadyActivity;
 import com.example.sinhansol.databinding.FragmentNormalHomeBinding;
 import com.example.sinhansol.moneyinout.AccountCheckActivity;
 
 
-public class NormalHomeFragment extends Fragment {
+public class NormalHomeFragment extends Fragment implements View.OnClickListener{
     FragmentNormalHomeBinding binding;
 
     @Override
@@ -42,8 +43,28 @@ public class NormalHomeFragment extends Fragment {
 
             startActivity(intent);
         });
+        binding.ready1.setOnClickListener(this);
+        binding.ready2.setOnClickListener(this);
+        binding.ready3.setOnClickListener(this);
+        binding.ready4.setOnClickListener(this);
+        binding.ready5.setOnClickListener(this);
+        binding.ready6.setOnClickListener(this);
+        binding.ready7.setOnClickListener(this);
+        binding.ready8.setOnClickListener(this);
+        binding.ready9.setOnClickListener(this);
+        binding.ready10.setOnClickListener(this);
+        binding.ready11.setOnClickListener(this);
+        binding.ready12.setOnClickListener(this);
+        binding.ready13.setOnClickListener(this);
+        binding.ready14.setOnClickListener(this);
 
 
         return binding.getRoot();
+    }
+
+    @Override
+    public void onClick(View v) {
+        Intent intent = new Intent(getContext(), ReadyActivity.class);
+        startActivity(intent);
     }
 }

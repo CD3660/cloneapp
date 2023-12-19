@@ -8,7 +8,14 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.sinhansol.databinding.ItemRecvLifeBinding;
 
+import java.util.ArrayList;
+
 public class BenefitsLifeRecvAdapter extends RecyclerView.Adapter<BenefitsLifeRecvAdapter.LifeRecvViewHolder> {
+    ArrayList<BenefitsDTO> list;
+
+    public BenefitsLifeRecvAdapter(ArrayList<BenefitsDTO> list) {
+        this.list = list;
+    }
 
     @NonNull
     @Override
@@ -18,7 +25,12 @@ public class BenefitsLifeRecvAdapter extends RecyclerView.Adapter<BenefitsLifeRe
     }
 
     @Override
-    public void onBindViewHolder(@NonNull LifeRecvViewHolder h, int i) {
+    public void onBindViewHolder(@NonNull LifeRecvViewHolder h, int position) {
+        int i = position%5;
+        h.binding.imgv.setImageResource(list.get(i).getImgRes());
+        h.binding.title.setText(list.get(i).getTitle());
+        h.binding.tv1.setText(list.get(i).getContent1());
+        h.binding.tv2.setText(list.get(i).getContent2());
 
     }
 

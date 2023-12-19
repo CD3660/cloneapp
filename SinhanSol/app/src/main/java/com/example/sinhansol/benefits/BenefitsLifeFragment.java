@@ -28,7 +28,7 @@ public class BenefitsLifeFragment extends Fragment {
                              Bundle savedInstanceState) {
         binding = FragmentBenefitsLifeBinding.inflate(inflater, container, false);
 
-        binding.pager2.setAdapter(new BenefitsLifeRecvAdapter());
+        binding.pager2.setAdapter(new BenefitsLifeRecvAdapter(getList2()));
         binding.pager2.setOrientation(ViewPager2.ORIENTATION_HORIZONTAL);
 
         binding.pager2.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
@@ -38,17 +38,13 @@ public class BenefitsLifeFragment extends Fragment {
                 binding.pager2PageNow.setText((i%5+1)+"");
             }
         });
-        binding.pager2.setScroll
+//        binding.pager2.setScroll
         binding.pager2.setCurrentItem(1000);
 
         binding.recv.setAdapter(new LifeRecvAdapter(getContext(), getList()));
         binding.recv.setLayoutManager(new LinearLayoutManager(getContext()));
 
         return binding.getRoot();
-    }
-
-    public void startAutoScrolling(){
-
     }
 
     ArrayList<ArrayList<String>> getList(){
@@ -89,6 +85,16 @@ public class BenefitsLifeFragment extends Fragment {
         list.get(4).add("급여클럽");
         list.get(4).add("광고보고 포인트받기");
         list.get(4).add("콘텐츠 소액투자");
+
+        return list;
+    }
+    public ArrayList<BenefitsDTO> getList2(){
+        ArrayList<BenefitsDTO> list = new ArrayList<>();
+        list.add(new BenefitsDTO(R.drawable.ic_launcher_foreground,"콘텐츠 소액투자", "K-콘텐츠", "새롭게 즐기기"));
+        list.add(new BenefitsDTO(R.drawable.ic_launcher_foreground,"SOL(쏠) 생활정보", "알아두면 쏠쏠한", "생활정보를 확인해봐요!"));
+        list.add(new BenefitsDTO(R.drawable.ic_launcher_foreground,"해외골프 예약", "해외 여행은 골프와 함께!", "특별한 라운딩 즐기기"));
+        list.add(new BenefitsDTO(R.drawable.ic_launcher_foreground,"NFT월렛", "나의 금융활동을", "신한 NFT로 기록하다"));
+        list.add(new BenefitsDTO(R.drawable.ic_launcher_foreground,"동전기부 서비스", "소액으로 실천하는", "자동기부서비스"));
 
         return list;
     }

@@ -65,6 +65,7 @@
 
             </RelativeLayout>
             <TextView
+                android:id="@+id/ready_1"
                 android:gravity="center"
                 android:text="자산증감현환"
                 android:textSize="18dp"
@@ -117,6 +118,7 @@
 
             </RelativeLayout>
             <TextView
+                android:id="@+id/ready_2"
                 android:gravity="center"
                 android:text="자산연결"
                 android:textSize="18dp"
@@ -180,6 +182,7 @@
 
             </RelativeLayout>
             <TextView
+                android:id="@+id/ready_3"
                 android:gravity="center"
                 android:text="목표만들기"
                 android:textSize="18dp"
@@ -188,6 +191,7 @@
                 android:layout_height="50dp"/>
         </LinearLayout>
         <LinearLayout
+            android:id="@+id/ready_4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"

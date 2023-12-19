@@ -15,7 +15,7 @@ import com.example.sinhansol.transfer.TransferToActivity;
 
 import java.util.ArrayList;
 
-public class AccountAdapter extends RecyclerView.Adapter<AccountAdapter.AccountViewHolder> {
+public class AccountAdapter extends RecyclerView.Adapter<AccountAdapter.AccountViewHolder> implements View.OnClickListener {
     LayoutInflater inflater;
     Context context;
 
@@ -43,11 +43,22 @@ public class AccountAdapter extends RecyclerView.Adapter<AccountAdapter.AccountV
             
             context.startActivity(intent);
         });
+        h.binding.ready1.setOnClickListener(this);
+        h.binding.ready2.setOnClickListener(this);
+        h.binding.ready3.setOnClickListener(this);
+        h.binding.ready4.setOnClickListener(this);
+        h.binding.ready5.setOnClickListener(this);
     }
 
     @Override
     public int getItemCount() {
         return 3;
+    }
+
+    @Override
+    public void onClick(View v) {
+        Intent intent = new Intent(context, ReadyActivity.class);
+        context.startActivity(intent);
     }
 
     public class AccountViewHolder extends RecyclerView.ViewHolder {

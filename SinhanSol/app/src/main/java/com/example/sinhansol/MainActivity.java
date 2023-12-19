@@ -19,7 +19,7 @@ import com.example.sinhansol.home.NormalHomeFragment;
 import com.example.sinhansol.moneyverse.MoneyverseFragment;
 import com.example.sinhansol.moneyverse.SpendFragment;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     ActivityMainBinding binding;
 
     @Override
@@ -37,6 +37,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         binding.topNav1.setVisibility(View.INVISIBLE);
+        binding.topNav1.setOnClickListener(this);
+        binding.topNav2.setOnClickListener(this);
+        binding.topNav3.setOnClickListener(this);
+        binding.topNav4.setOnClickListener(this);
         binding.btmNav.setOnItemSelectedListener(item -> {
             if (item.getItemId() == binding.btmNav.getMenu().getItem(0).getItemId()) {
                 binding.switchEasy.setVisibility(View.VISIBLE);
@@ -70,5 +74,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void changeFragment(Fragment fragment) {
         getSupportFragmentManager().beginTransaction().replace(R.id.container, fragment).commit();
+    }
+
+    @Override
+    public void onClick(View v) {
+        Intent intent = new Intent(this, ReadyActivity.class);
+        startActivity(intent);
     }
 }
