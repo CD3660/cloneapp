@@ -16,10 +16,17 @@ public class BenefitsRecommendAdapter extends RecyclerView.Adapter<BenefitsRecom
 
     LayoutInflater inflater;
 
-    ArrayList<ArrayList<String>> list;
+    ArrayList<BenefitsRecommendDTO> list;
 
     Context context;
 
+
+
+    public BenefitsRecommendAdapter(LayoutInflater inflater, ArrayList<BenefitsRecommendDTO> list, Context context) {
+        this.inflater = inflater;
+        this.list = list;
+        this.context = context;
+    }
 
 
     @NonNull
@@ -35,7 +42,7 @@ public class BenefitsRecommendAdapter extends RecyclerView.Adapter<BenefitsRecom
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder h, int i) {
-        h.binding.recommendText1.setText(list.get(i).get(i));
+        h.binding.recommendText1.setText(list.get(i).);
 
 
 
