@@ -40,14 +40,19 @@
         android:src="@drawable/ic_launcher_foreground"
         android:layout_width="250dp"
         android:layout_height="350dp"/>
+
     <Button
-        android:layout_margin="10dp"
-        android:layout_alignParentBottom="true"
-        android:text="카드 등록"
-        android:textStyle="bold"
-        android:textSize="20dp"
-        android:textColor="@color/white"
-        android:backgroundTint="#0471E7"
+        android:id="@+id/ready_1"
         android:layout_width="match_parent"
-        android:layout_height="50dp"/>
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#0471E7"
+        android:text="카드 등록"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
 </RelativeLayout>

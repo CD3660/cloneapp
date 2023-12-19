@@ -3,9 +3,11 @@ package com.example.sinhansol.transfer;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.example.sinhansol.R;
+import com.example.sinhansol.ReadyActivity;
 import com.example.sinhansol.databinding.ActivityTransferToBinding;
 import com.google.android.material.tabs.TabLayout;
 
@@ -37,6 +39,13 @@ public class TransferToActivity extends AppCompatActivity {
             public void onTabReselected(TabLayout.Tab tab) {
 
             }
+        });
+        binding.ready1.setOnClickListener(v -> {
+            Intent intent = new Intent(this, ReadyActivity.class);
+            startActivity(intent);
+        });
+        binding.backspace.setOnClickListener(v -> {
+            finish();
         });
 
     }

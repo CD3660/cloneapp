@@ -1,6 +1,7 @@
 package com.example.sinhansol.allmenu;
 
 import android.content.Context;
+import android.content.Intent;
 import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
@@ -8,6 +9,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.sinhansol.ReadyActivity;
 import com.example.sinhansol.databinding.ItemMenuRecv1Binding;
 import com.example.sinhansol.databinding.ItemMenuRecv2Binding;
 
@@ -40,7 +42,10 @@ public class AllMenuAdapter2 extends RecyclerView.Adapter<AllMenuAdapter2.ViewHo
     public void onBindViewHolder(@NonNull ViewHolder h, int i) {
 
         h.binding.menuRecv2DetailList.setText(list.get(i));
-
+        h.binding.menuRecv2DetailList.setOnClickListener(v -> {
+            Intent intent = new Intent(context, ReadyActivity.class);
+            context.startActivity(intent);
+        });
 
 
     }

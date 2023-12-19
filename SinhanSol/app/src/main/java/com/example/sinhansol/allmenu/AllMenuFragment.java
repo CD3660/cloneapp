@@ -1,5 +1,6 @@
 package com.example.sinhansol.allmenu;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -10,12 +11,13 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.sinhansol.R;
+import com.example.sinhansol.ReadyActivity;
 import com.example.sinhansol.databinding.FragmentAllMenuBinding;
 
 import java.util.ArrayList;
 
 
-public class AllMenuFragment extends Fragment {
+public class AllMenuFragment extends Fragment implements View.OnClickListener{
     FragmentAllMenuBinding binding;
 
     @Override
@@ -26,6 +28,10 @@ public class AllMenuFragment extends Fragment {
 
         binding.menuRecv.setAdapter(new AllMenuAdapter1(inflater, getList(),getData1(), getContext()));
         binding.menuRecv.setLayoutManager(new LinearLayoutManager(getContext()));
+
+        binding.ready1.setOnClickListener(this);
+        binding.ready2.setOnClickListener(this);
+        binding.ready3.setOnClickListener(this);
 
         return binding.getRoot();
     }
@@ -342,5 +348,11 @@ public class AllMenuFragment extends Fragment {
 
 
         return subList;
+    }
+
+    @Override
+    public void onClick(View v) {
+        Intent intent = new Intent(getContext(), ReadyActivity.class);
+        startActivity(intent);
     }
 }

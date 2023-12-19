@@ -125,6 +125,7 @@
             android:layout_height="wrap_content" />
 
         <LinearLayout
+            android:id="@+id/ready_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/round_corner"
@@ -206,6 +207,7 @@
             android:layout_height="wrap_content" />
 
         <RelativeLayout
+            android:id="@+id/ready_2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -241,6 +243,7 @@
             android:orientation="horizontal">
 
             <TextView
+                android:id="@+id/ready_3"
                 android:layout_width="0dp"
                 android:layout_height="50dp"
                 android:layout_marginRight="10dp"
@@ -252,6 +255,7 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/ready_4"
                 android:layout_width="0dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="10dp"

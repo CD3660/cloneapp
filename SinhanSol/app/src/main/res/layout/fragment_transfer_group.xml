@@ -23,6 +23,7 @@
             android:layout_weight="1" />
 
         <Button
+            android:id="@+id/ready_1"
             android:text="그룹"
             android:textColor="@color/black"
             android:backgroundTint="#EEEEEE"
@@ -92,6 +93,7 @@
             android:layout_weight="1" />
 
         <Button
+            android:id="@+id/ready_2"
             android:text="관리"
             android:textColor="@color/black"
             android:backgroundTint="#EEEEEE"

@@ -68,6 +68,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"/>
     <LinearLayout
+        android:id="@+id/ready_1"
         android:background="@drawable/round_corner_btn"
         android:backgroundTint="#EBEBEB"
         android:layout_width="match_parent"
@@ -89,6 +90,7 @@
 
     </LinearLayout>
     <LinearLayout
+        android:id="@+id/ready_2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#003E7D"

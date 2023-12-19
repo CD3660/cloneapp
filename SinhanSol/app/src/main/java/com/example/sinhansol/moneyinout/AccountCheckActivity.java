@@ -46,7 +46,9 @@ public class AccountCheckActivity extends AppCompatActivity {
 
             }
         });
-
+        binding.backspace.setOnClickListener(v -> {
+            finish();
+        });
 
     }
     public ArrayList<Fragment> getFragmentList(){

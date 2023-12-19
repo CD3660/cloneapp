@@ -30,7 +30,7 @@ public class OneEyeFragment extends Fragment implements View.OnClickListener {
         binding.ready9.setOnClickListener(this);
         binding.ready10.setOnClickListener(this);
         binding.ready11.setOnClickListener(this);
-
+        binding.tv5.setOnClickListener(this);
 
 
 
