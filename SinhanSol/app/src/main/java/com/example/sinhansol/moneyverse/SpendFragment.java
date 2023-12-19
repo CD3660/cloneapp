@@ -35,7 +35,7 @@ public class SpendFragment extends Fragment {
         list.add(new MoneyverseDTO("카드", "내 모든 카드\n결제 예정 금액은?", null, "카드사용내역", R.drawable.spend_1, 0));
         list.add(new MoneyverseDTO("소비 카테고리", "이번 달\n가장 많이 쓴 곳\n궁금하다면", null, "소비 카테고리", R.drawable.spend_2, 0));
         list.add(new MoneyverseDTO("예산관리", "스쳐가는 내 돈\n이제는 아낄 차례", null, "예산설정하기", R.drawable.spend_3, 0));
-        list.add(new MoneyverseDTO("소비분석", null, "또래 중 소비금액", null, R.drawable.money_4, 0));
+        list.add(new MoneyverseDTO("소비분석", null, "또래 중 소비금액\n상위 몇%일까?", null, R.drawable.money_4, 0));
         list.add(new MoneyverseDTO("가계부", null, "내 통장, 카드, PAY 리포트\n한눈에 확인하세요", null, R.drawable.spend_5, R.drawable.round_corner_blue));
         return list;
     }

@@ -16,9 +16,9 @@ import java.util.ArrayList;
 public class LifeRecvAdapter extends RecyclerView.Adapter<LifeRecvAdapter.LifeViewHolder> {
 
     Context context;
-    ArrayList<ArrayList<String>> list;
+    ArrayList<ArrayList<LifeDTO>> list;
 
-    public LifeRecvAdapter(Context context, ArrayList<ArrayList<String>> list) {
+    public LifeRecvAdapter(Context context, ArrayList<ArrayList<LifeDTO>> list) {
         this.context = context;
         this.list = list;
     }
@@ -32,8 +32,8 @@ public class LifeRecvAdapter extends RecyclerView.Adapter<LifeRecvAdapter.LifeVi
 
     @Override
     public void onBindViewHolder(@NonNull LifeViewHolder h, int i) {
-        h.binding.tagTitle.setText(list.get(i).get(0));
-        h.binding.recvLifeDetail.setAdapter(new LifeDetailRecvAdapter(list.get(i)));
+        h.binding.tagTitle.setText(list.get(i).get(0).getTitle());
+        h.binding.recvLifeDetail.setAdapter(new LifeDetailRecvAdapter(list.get(i), context));
         h.binding.recvLifeDetail.setLayoutManager(new LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false));
     }
 

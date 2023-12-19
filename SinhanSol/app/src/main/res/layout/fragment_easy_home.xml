@@ -179,6 +179,7 @@
 
 
                     <TextView
+                        android:id="@+id/ready_12"
                         android:shadowColor="#4B97DA"
                         android:shadowDx="1"
                         android:shadowDy="1"
@@ -202,6 +203,7 @@
 
 
             <LinearLayout
+                android:id="@+id/ready_1"
                 android:layout_margin="15dp"
                 android:backgroundTint="#FFFFFF"
                 android:layout_gravity="center_horizontal"
@@ -242,6 +244,7 @@
                  android:gravity="center">
 
                     <LinearLayout
+                        android:id="@+id/ready_2"
                         android:layout_margin="15dp"
                         android:backgroundTint="#FFFFFF"
                         android:layout_width="170dp"
@@ -267,6 +270,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/ready_3"
                         android:layout_margin="15dp"
                         android:backgroundTint="#FFFFFF"
                         android:layout_width="170dp"
@@ -309,6 +313,7 @@
                     android:gravity="center">
 
                     <LinearLayout
+                        android:id="@+id/ready_4"
                         android:layout_margin="15dp"
                         android:backgroundTint="#FFFFFF"
                         android:layout_width="170dp"
@@ -334,6 +339,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/ready_5"
                         android:layout_margin="15dp"
                         android:backgroundTint="#FFFFFF"
                         android:layout_width="170dp"
@@ -363,82 +369,67 @@
                 </LinearLayout>
 
 
-
-
-
-
-
-
-
-
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:orientation="horizontal">
 
                     <LinearLayout
-                        android:layout_margin="15dp"
-                        android:backgroundTint="#FFFFFF"
+                        android:id="@+id/ready_6"
                         android:layout_width="170dp"
                         android:layout_height="120dp"
+                        android:layout_margin="15dp"
                         android:background="@drawable/round_corner"
-                        android:orientation="vertical"
-                        android:gravity="center">
+                        android:backgroundTint="#FFFFFF"
+                        android:gravity="center"
+                        android:orientation="vertical">
 
                         <ImageView
                             android:layout_width="70dp"
                             android:layout_height="70dp"
-                            android:src="@drawable/ic_launcher_foreground"/>
+                            android:src="@drawable/ic_launcher_foreground" />
 
                         <TextView
-                            android:textAlignment="center"
                             android:layout_width="120dp"
                             android:layout_height="30dp"
                             android:text="공과금내기"
-                            android:textStyle="bold"
-                            android:textSize="20dp"/>
+                            android:textAlignment="center"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
 
 
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_margin="15dp"
-                        android:backgroundTint="#FFFFFF"
+                        android:id="@+id/ready_7"
                         android:layout_width="170dp"
                         android:layout_height="120dp"
+                        android:layout_margin="15dp"
                         android:background="@drawable/round_corner"
-                        android:orientation="vertical"
-                        android:gravity="center">
+                        android:backgroundTint="#FFFFFF"
+                        android:gravity="center"
+                        android:orientation="vertical">
 
 
                         <ImageView
                             android:layout_width="70dp"
                             android:layout_height="70dp"
-                            android:src="@drawable/ic_launcher_foreground"/>
+                            android:src="@drawable/ic_launcher_foreground" />
 
                         <TextView
-                            android:textAlignment="center"
                             android:layout_width="120dp"
                             android:layout_height="30dp"
                             android:text="사고신고"
-                            android:textStyle="bold"
-                            android:textSize="20dp"/>
-
+                            android:textAlignment="center"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
 
 
                     </LinearLayout>
 
                 </LinearLayout>
 
-
-
-
-
-
-
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -446,6 +437,7 @@
                     android:gravity="center">
 
                     <LinearLayout
+                        android:id="@+id/ready_8"
                         android:layout_margin="15dp"
                         android:backgroundTint="#FFFFFF"
                         android:layout_width="170dp"
@@ -471,6 +463,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/ready_9"
                         android:layout_margin="15dp"
                         android:backgroundTint="#FFFFFF"
                         android:layout_width="170dp"
@@ -514,6 +507,7 @@
                     android:gravity="center">
 
                     <LinearLayout
+                        android:id="@+id/ready_10"
                         android:layout_margin="15dp"
                         android:backgroundTint="#FFFFFF"
                         android:layout_width="170dp"
@@ -539,6 +533,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/ready_11"
                         android:layout_margin="15dp"
                         android:backgroundTint="#FFFFFF"
                         android:layout_width="170dp"

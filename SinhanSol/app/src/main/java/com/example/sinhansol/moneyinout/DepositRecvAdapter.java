@@ -1,5 +1,7 @@
 package com.example.sinhansol.moneyinout;
 
+import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -7,9 +9,16 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.sinhansol.ReadyActivity;
 import com.example.sinhansol.databinding.ItemRecvDepositCheckBinding;
 
 public class DepositRecvAdapter extends RecyclerView.Adapter<DepositRecvAdapter.DepositViewHolder> {
+    Context context;
+
+    public DepositRecvAdapter(Context context) {
+        this.context = context;
+    }
+
     @NonNull
     @Override
     public DepositViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -18,8 +27,11 @@ public class DepositRecvAdapter extends RecyclerView.Adapter<DepositRecvAdapter.
     }
 
     @Override
-    public void onBindViewHolder(@NonNull DepositViewHolder holder, int position) {
-
+    public void onBindViewHolder(@NonNull DepositViewHolder h, int i) {
+        h.binding.ready1.setOnClickListener(v -> {
+            Intent intent = new Intent(context, ReadyActivity.class);
+            context.startActivity(intent);
+        });
     }
 
     @Override

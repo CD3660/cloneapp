@@ -111,6 +111,7 @@
                     android:textStyle="bold" />
 
                 <RelativeLayout
+                    android:id="@+id/ready_1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
@@ -163,6 +164,7 @@
                     android:textStyle="bold" />
 
                 <RelativeLayout
+                    android:id="@+id/ready_2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
@@ -224,6 +226,7 @@
                     android:orientation="horizontal">
 
                     <LinearLayout
+                        android:id="@+id/ready_3"
                         android:layout_width="0dp"
                         android:layout_height="100dp"
                         android:layout_weight="1"
@@ -242,6 +245,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/ready_4"
                         android:layout_width="0dp"
                         android:layout_height="100dp"
                         android:layout_weight="1"
@@ -260,6 +264,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/ready_5"
                         android:layout_width="0dp"
                         android:layout_height="100dp"
                         android:layout_weight="1"
@@ -289,6 +294,7 @@
                 android:padding="10dp">
 
                 <LinearLayout
+                    android:id="@+id/ready_6"
                     android:layout_width="0dp"
                     android:layout_height="70dp"
                     android:layout_weight="1"
@@ -307,6 +313,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/ready_7"
                     android:layout_width="0dp"
                     android:layout_height="70dp"
                     android:layout_weight="1"
@@ -325,6 +332,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/ready_8"
                     android:layout_width="0dp"
                     android:layout_height="70dp"
                     android:layout_weight="1"
@@ -343,6 +351,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/ready_9"
                     android:layout_width="0dp"
                     android:layout_height="70dp"
                     android:layout_weight="1"
@@ -363,6 +372,7 @@
             </LinearLayout>
 
             <RelativeLayout
+                android:id="@+id/ready_10"
                 style="@style/box"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -392,6 +402,7 @@
         </LinearLayout>
     </ScrollView>
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ready_11"
         android:text="자산관리 시작하기"
         android:textStyle="bold"
         android:textSize="20dp"

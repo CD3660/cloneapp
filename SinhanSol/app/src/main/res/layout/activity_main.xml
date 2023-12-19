@@ -74,4 +74,5 @@
         app:itemTextColor="@drawable/btm_nav_bg"
         app:menu="@menu/btn_menu_nav"
         app:labelVisibilityMode="labeled"/>
+
 </LinearLayout>

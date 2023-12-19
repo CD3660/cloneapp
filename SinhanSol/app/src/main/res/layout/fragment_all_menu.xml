@@ -20,29 +20,35 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:padding="20dp">
-
-            <TextView
+            <LinearLayout
+                android:id="@+id/ready_1"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="bottom"
-                android:text="홍길동"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:text="홍길동"
 
-                android:textSize="25dp"
-                android:textStyle="bold" />
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:text="님"
-                android:textSize="25dp"
-                android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="님"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
 
-            <ImageView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:layout_gravity="center_vertical"
-                android:src="@drawable/baseline_keyboard_arrow_right" />
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/baseline_keyboard_arrow_right" />
+            </LinearLayout>
+
 
             <View
                 android:layout_width="0dp"
@@ -344,6 +350,7 @@
                     android:textStyle="bold" />
 
                 <LinearLayout
+                    android:id="@+id/ready_2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="25dp"
@@ -391,6 +398,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/ready_3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="25dp"

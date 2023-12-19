@@ -1,5 +1,6 @@
 package com.example.sinhansol.benefits;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -9,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.sinhansol.R;
+import com.example.sinhansol.ReadyActivity;
 import com.example.sinhansol.databinding.FragmentBenefitsBinding;
 import com.google.android.material.tabs.TabLayout;
 
@@ -40,7 +42,10 @@ public class BenefitsFragment extends Fragment {
             }
         });
         binding.tabNav.selectTab(binding.tabNav.getTabAt(0));
-
+        binding.ready1.setOnClickListener(v -> {
+            Intent intent = new Intent(getContext(), ReadyActivity.class);
+            startActivity(intent);
+        });
 
 
         return binding.getRoot();
