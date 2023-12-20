@@ -41,21 +41,21 @@ public class BenefitsRecommendAdapter extends RecyclerView.Adapter<BenefitsRecom
 
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder h, int i) {
-        h.binding.recommendText1.setText(list.get(i).);
-
-
+    public void onBindViewHolder(@NonNull ViewHolder h, int position) {
+        int i = position%5;
+        h.binding.recommendText1.setText(list.get(0).getText1());
+        h.binding.recommendText2.setText(list.get(0).getText2());
+        h.binding.recommendText3.setText(list.get(0).getText3());
+        h.binding.imgvPager2Recommend.setImageResource(list.get(0).getImgRes());
 
     }
-
-
 
 
 
     @Override
-    public int getItemCount() {
-        return list.size();
-    }
+    public int getItemCount() {return Integer.MAX_VALUE;}
+
+
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         ItemRecvBenefitsBinding binding;

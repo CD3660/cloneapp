@@ -3,6 +3,7 @@ package com.example.sinhansol.benefits;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.viewpager2.widget.ViewPager2;
 
 import android.os.Handler;
 import android.view.LayoutInflater;
@@ -27,7 +28,18 @@ public class BenefitsRecommendFragment extends Fragment {
                              Bundle savedInstanceState) {
        binding = FragmentBenefitsRecommendBinding.inflate(inflater, container, false);
 
-       binding.pager2Benefits.setAdapter(new );
+       binding.pager2Benefits.setAdapter(new BenefitsRecommendAdapter(inflater, recommendGetList(), getContext()));
+       binding.pager2Benefits.setOrientation(ViewPager2.ORIENTATION_HORIZONTAL);
+
+       binding.pager2Benefits.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
+           @Override
+           public void onPageSelected(int i) {
+               super.onPageSelected(i);
+               binding.pager2RecommendPageNow.setText((i%5+1)+"");
+           }
+       });
+
+       binding.pager2Benefits.setCurrentItem(1000);
 
 
         return inflater.inflate(R.layout.fragment_benefits_recommend_, container, false);
@@ -43,7 +55,7 @@ public class BenefitsRecommendFragment extends Fragment {
 
 
 
-    ArrayList<BenefitsRecommendDTO> RecommendGetList() {
+    ArrayList<BenefitsRecommendDTO> recommendGetList() {
         ArrayList<BenefitsRecommendDTO> list = new ArrayList<>();
         new BenefitsRecommendDTO(R.drawable.ic_launcher_foreground, "연말 전시", "<이경준 사진전>","초대 이벤트");
         new BenefitsRecommendDTO(R.drawable.ic_launcher_foreground, "신한 슈퍼SOL", "사전예약하면","100만 포인트의 기회가");
