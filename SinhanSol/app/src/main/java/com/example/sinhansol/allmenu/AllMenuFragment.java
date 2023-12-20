@@ -3,6 +3,8 @@ package com.example.sinhansol.allmenu;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.core.widget.NestedScrollView;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
@@ -28,9 +30,8 @@ public class AllMenuFragment extends Fragment implements View.OnClickListener {
 
         binding = FragmentAllMenuBinding.inflate(inflater, container, false);
 
-        binding.menuRecv.setAdapter(new AllMenuAdapter1(inflater, getList(), getData1(), getContext(), this));
-        binding.menuRecv.setLayoutManager(new LinearLayoutManager(getContext()));
-
+        setAdapter();
+        setScroll();
         binding.ready1.setOnClickListener(this);
         binding.ready2.setOnClickListener(this);
         binding.ready3.setOnClickListener(this);
@@ -39,54 +40,151 @@ public class AllMenuFragment extends Fragment implements View.OnClickListener {
         return binding.getRoot();
     }
 
+    public void setScroll(){
+        binding.menuChip1.setOnClickListener(v -> {
+            binding.scrollView.smoothScrollTo(0, binding.scrollTarget1.getTop());
+        });
+        binding.menuChip2.setOnClickListener(v -> {
+            binding.scrollView.smoothScrollTo(0, binding.scrollTarget2.getTop());
+        });
+        binding.menuChip3.setOnClickListener(v -> {
+            binding.scrollView.smoothScrollTo(0, binding.scrollTarget3.getTop());
+        });
+        binding.menuChip4.setOnClickListener(v -> {
+            binding.scrollView.smoothScrollTo(0, binding.scrollTarget4.getTop());
+        });
+        binding.menuChip5.setOnClickListener(v -> {
+            binding.scrollView.smoothScrollTo(0, binding.scrollTarget5.getTop());
+        });
+        binding.menuChip6.setOnClickListener(v -> {
+            binding.scrollView.smoothScrollTo(0, binding.scrollTarget6.getTop());
+        });
+        binding.menuChip7.setOnClickListener(v -> {
+            binding.scrollView.smoothScrollTo(0, binding.scrollTarget7.getTop());
+        });
+        binding.menuChip8.setOnClickListener(v -> {
+            binding.scrollView.smoothScrollTo(0, binding.scrollTarget8.getTop());
+        });
+        binding.menuChip9.setOnClickListener(v -> {
+            binding.scrollView.smoothScrollTo(0, binding.scrollTarget9.getTop());
+        });
+        binding.menuChip10.setOnClickListener(v -> {
+            binding.scrollView.smoothScrollTo(0, binding.scrollTarget10.getTop());
+        });
+        binding.menuChip11.setOnClickListener(v -> {
+            binding.scrollView.smoothScrollTo(0, binding.scrollTarget11.getTop());
+        });
+        binding.menuChip12.setOnClickListener(v -> {
+            binding.scrollView.smoothScrollTo(0, binding.scrollTarget12.getTop());
+        });
+        binding.menuChip13.setOnClickListener(v -> {
+            binding.scrollView.smoothScrollTo(0, binding.scrollTarget13.getTop());
+        });
+        binding.menuChip14.setOnClickListener(v -> {
+            binding.scrollView.smoothScrollTo(0, binding.scrollTarget14.getTop());
+        });
+        binding.menuChip15.setOnClickListener(v -> {
+            binding.scrollView.smoothScrollTo(0, binding.scrollTarget15.getTop());
+        });
 
-    public ArrayList<String> getData1() {
-        ArrayList<String> list = new ArrayList<>();
-        list.add("자주쓰는 메뉴");
-        list.add("조회/관리");
-        list.add("이체");
-        list.add("공과금");
-        list.add("상품가입");
-        list.add("상품관리");
-        list.add("외환");
-        list.add("혜택");
-        list.add("생활편의");
-        list.add("모바일창구");
-        list.add("특화라운지");
-        list.add("참여마당");
-        list.add("머니버스");
-        list.add("자산");
-        list.add("소비");
-        list.add("신한플러스");
-        list.add("고객센터");
-        list.add("설정/인증");
 
-        return list;
+        binding.scrollView.setOnScrollChangeListener(new NestedScrollView.OnScrollChangeListener() {
+            @Override
+            public void onScrollChange(@NonNull NestedScrollView v, int scrollX, int scrollY, int oldScrollX, int oldScrollY) {
+                if(binding.scrollTarget1.getTop() < scrollY && scrollY < binding.scrollTarget2.getTop()){
+                    binding.menuChip1.setChecked(true);
+                    binding.chipScroll.smoothScrollTo(binding.menuChip1.getLeft(),0);
+                }
+                if(binding.scrollTarget2.getTop() < scrollY && scrollY < binding.scrollTarget3.getTop()){
+                    binding.menuChip2.setChecked(true);
+                }
+                if(binding.scrollTarget3.getTop() < scrollY && scrollY < binding.scrollTarget4.getTop()){
+                    binding.menuChip3.setChecked(true);
+                }
+                if(binding.scrollTarget4.getTop() < scrollY && scrollY < binding.scrollTarget5.getTop()){
+                    binding.menuChip4.setChecked(true);
+                }
+                if(binding.scrollTarget5.getTop() < scrollY && scrollY < binding.scrollTarget6.getTop()){
+                    binding.menuChip5.setChecked(true);
+                }
+                if(binding.scrollTarget6.getTop() < scrollY && scrollY < binding.scrollTarget7.getTop()){
+                    binding.menuChip6.setChecked(true);
+                }
+                if(binding.scrollTarget7.getTop() < scrollY && scrollY < binding.scrollTarget8.getTop()){
+                    binding.menuChip7.setChecked(true);
+                }
+                if(binding.scrollTarget8.getTop() < scrollY && scrollY < binding.scrollTarget9.getTop()){
+                    binding.menuChip8.setChecked(true);
+                }
+                if(binding.scrollTarget9.getTop() < scrollY && scrollY < binding.scrollTarget10.getTop()){
+                    binding.menuChip9.setChecked(true);
+                }
+                if(binding.scrollTarget10.getTop() < scrollY && scrollY < binding.scrollTarget11.getTop()){
+                    binding.menuChip10.setChecked(true);
+                }
+                if(binding.scrollTarget11.getTop() < scrollY && scrollY < binding.scrollTarget12.getTop()){
+                    binding.menuChip11.setChecked(true);
+                }
+                if(binding.scrollTarget12.getTop() < scrollY && scrollY < binding.scrollTarget13.getTop()){
+                    binding.menuChip12.setChecked(true);
+                }
+                if(binding.scrollTarget13.getTop() < scrollY && scrollY < binding.scrollTarget14.getTop()){
+                    binding.menuChip13.setChecked(true);
+                }
+                if(binding.scrollTarget14.getTop() < scrollY && scrollY < binding.scrollTarget15.getTop()){
+                    binding.menuChip14.setChecked(true);
+                }
+                if(binding.scrollTarget15.getTop() < scrollY){
+                    binding.menuChip15.setChecked(true);
+                }
+
+
+
+
+
+
+            }
+        });
 
     }
 
-    public ArrayList<ArrayList<String>> getList() {
-        ArrayList<ArrayList<String>> list = new ArrayList<>();
-        list.add(getListData1());
-        list.add(getListData2());
-        list.add(getListData3());
-        list.add(getListData4());
-        list.add(getListData5());
-        list.add(getListData6());
-        list.add(getListData7());
-        list.add(getListData8());
-        list.add(getListData9());
-        list.add(getListData10());
-        list.add(getListData11());
-        list.add(getListData12());
-        list.add(getListData13());
-        list.add(getListData14());
-        list.add(getListData15());
-        list.add(getListData16());
-        list.add(getListData17());
-        list.add(getListData18());
-        return list;
+
+
+
+
+    public void setAdapter(){
+        binding.menuRecvList1.setAdapter(new AllMenuAdapter(getLayoutInflater(),getListData1(), getContext()));
+        binding.menuRecvList2.setAdapter(new AllMenuAdapter(getLayoutInflater(),getListData2(), getContext()));
+        binding.menuRecvList3.setAdapter(new AllMenuAdapter(getLayoutInflater(),getListData3(), getContext()));
+        binding.menuRecvList4.setAdapter(new AllMenuAdapter(getLayoutInflater(),getListData4(), getContext()));
+        binding.menuRecvList5.setAdapter(new AllMenuAdapter(getLayoutInflater(),getListData5(), getContext()));
+        binding.menuRecvList6.setAdapter(new AllMenuAdapter(getLayoutInflater(),getListData6(), getContext()));
+        binding.menuRecvList7.setAdapter(new AllMenuAdapter(getLayoutInflater(),getListData7(), getContext()));
+        binding.menuRecvList8.setAdapter(new AllMenuAdapter(getLayoutInflater(),getListData8(), getContext()));
+        binding.menuRecvList9.setAdapter(new AllMenuAdapter(getLayoutInflater(),getListData9(), getContext()));
+        binding.menuRecvList10.setAdapter(new AllMenuAdapter(getLayoutInflater(),getListData10(), getContext()));
+        binding.menuRecvList11.setAdapter(new AllMenuAdapter(getLayoutInflater(),getListData11(), getContext()));
+        binding.menuRecvList12.setAdapter(new AllMenuAdapter(getLayoutInflater(),getListData12(), getContext()));
+        binding.menuRecvList13.setAdapter(new AllMenuAdapter(getLayoutInflater(),getListData13(), getContext()));
+        binding.menuRecvList14.setAdapter(new AllMenuAdapter(getLayoutInflater(),getListData14(), getContext()));
+        binding.menuRecvList15.setAdapter(new AllMenuAdapter(getLayoutInflater(),getListData15(), getContext()));
+        binding.menuRecvList1.setLayoutManager(new LinearLayoutManager(getContext()));
+        binding.menuRecvList2.setLayoutManager(new LinearLayoutManager(getContext()));
+        binding.menuRecvList3.setLayoutManager(new LinearLayoutManager(getContext()));
+        binding.menuRecvList4.setLayoutManager(new LinearLayoutManager(getContext()));
+        binding.menuRecvList5.setLayoutManager(new LinearLayoutManager(getContext()));
+        binding.menuRecvList6.setLayoutManager(new LinearLayoutManager(getContext()));
+        binding.menuRecvList7.setLayoutManager(new LinearLayoutManager(getContext()));
+        binding.menuRecvList8.setLayoutManager(new LinearLayoutManager(getContext()));
+        binding.menuRecvList9.setLayoutManager(new LinearLayoutManager(getContext()));
+        binding.menuRecvList10.setLayoutManager(new LinearLayoutManager(getContext()));
+        binding.menuRecvList11.setLayoutManager(new LinearLayoutManager(getContext()));
+        binding.menuRecvList12.setLayoutManager(new LinearLayoutManager(getContext()));
+        binding.menuRecvList13.setLayoutManager(new LinearLayoutManager(getContext()));
+        binding.menuRecvList14.setLayoutManager(new LinearLayoutManager(getContext()));
+        binding.menuRecvList15.setLayoutManager(new LinearLayoutManager(getContext()));
     }
+
 
     public ArrayList<String> getListData1() {
         ArrayList<String> subList = new ArrayList<>();
